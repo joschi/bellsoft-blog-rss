@@ -2,7 +2,7 @@
   "version": "https://jsonfeed.org/version/1.1",
   "title": .title,
   "home_page_url": "https://bell-sw.com/",
-  "feed_url": "https://example.org/feed.json",
+  "feed_url": "https://joschi.github.io/bellsoft-blog-rss/feed.json",
   "favicon": "https://bell-sw.com/assets/images/favicon.png",
   items: [
     .nodes[] | {
