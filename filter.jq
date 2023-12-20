@@ -8,7 +8,7 @@
     .nodes[] | {
       "id": .postData.jsonId,
       "title": .postData.data.title.iv,
-      "summary": .postData.data.seo.iv.description,
+      "content_text": .postData.data.seo.iv.description,
       "image": ("https://bell-sw.com" + .postCover.images.fallback.src),
       "date_published": .postData.data.publishedAt.iv,
       "date_modified": .postData.data.updatedAt.iv,
