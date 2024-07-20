@@ -6,17 +6,16 @@
   "favicon": "https://bell-sw.com/assets/images/favicon.png",
   items: [
     .nodes[] | {
-      "id": .postData.jsonId,
-      "title": .postData.data.title.iv,
-      "content_text": .postData.data.seo.iv.description,
+      "id": .jsonId,
+      "title": .data.title.iv,
+      "content_text": .data.seo.iv.description,
       "image": ("https://bell-sw.com" + .postCover.images.fallback.src),
-      "date_published": .postData.data.publishedAt.iv,
-      "date_modified": .postData.data.updatedAt.iv,
+      "date_published": .data.publishedAt.iv,
+      "date_modified": .data.updatedAt.iv,
       "authors": [{
-        "name": .postAuthorsData[].authorData.name.iv,
-        "avatar": ("https://bell-sw.com" + .postAuthorsData[].authorGatsbyImageData.images.fallback.src)
+        "name": .data.authors.iv[].data.name.iv
       }],
-      "tags": .postData.data.category.iv,
-      "url": ("https://bell-sw.com" + .postData.data.relativeUrl.iv)
+      "tags": .data.category.iv,
+      "url": ("https://bell-sw.com" + .data.relativeUrl.iv)
     }]
 }
